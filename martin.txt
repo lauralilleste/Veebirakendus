@@ -1,0 +1,3 @@
+nimi: Martin Salus
+e-mail: martin.salus@gmail.com
+git: sall384
