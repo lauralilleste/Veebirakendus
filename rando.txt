@@ -1,3 +1,3 @@
 nimi: Rando Tõnisson
 e-mail: randotonisson@gmail.com
-git: rando345
+git: rando345 
