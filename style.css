@@ -15,11 +15,12 @@
 				height: 10%;
 				background-color: #627A9D;
 				text-align:center;
+				line-height: 60px;
 			}
 			 h1 {margin-top: 0px;
 				text-align: center;
-				
-				font-size:20px;
+				font-size:30px;
+				vertical-align: middle
 				}
 			 li{font-size:15px;
 			 list-style-type: none;
@@ -36,7 +37,13 @@
 							background-color: #B5C2CC
 							;}
 							
-			.screen {width: 75%;}
+			.screen {width: 100%;}
+			.top{width: 25%;
+				float: left;
+				text-align:center;
+				border-style: solid;
+				border-width: 1px;
+				border-color: black;}
 			a:hover {
 				color: Black;
 				font-weight: bold;
