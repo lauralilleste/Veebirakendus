@@ -40,6 +40,8 @@
 			a:hover {
 				color: Black;
 				font-weight: bold;
+				border-style: groove;
+				border-color: transparent transparent darkgrey transparent
 				}
 			
 }			
