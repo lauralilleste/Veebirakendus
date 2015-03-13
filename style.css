@@ -8,13 +8,13 @@
 				font-family: 'Open Sans',sans-serif;
 				font-size: 13px;
 				line-height: 30px;
-				background-color: #F0F5FF;
+				background-color: #EBEBEB;
 				
 				}	
 			header{
 				margin: 0%;
 				height: 10%;
-				background-color: #627A9D;
+				background-color: #A7DBD8;
 				text-align:center;
 				line-height: 60px;
 			}
@@ -35,7 +35,7 @@
 							
 							margin-right:10px;
 							float:left;
-							background-color: #B5C2CC
+							background-color: #F6C2C2
 							;}
 							
 			.screen {width: 100%;}
