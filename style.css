@@ -24,12 +24,19 @@
 				font-size:30px;
 				vertical-align: middle
 				}
+			 ul{margin:0;
+			 margin-top:8%;
+			 padding: 0;
+			 }		
 			 li{font-size:15px;
 			 list-style-type: none;
-				
+			 padding-left:4%;
+			 padding-right:5%;
 			 }
 			 a{text-decoration: none;
 				color: Black;
+				display: block;
+				text-indent:14%;
 			 }
 			.sidebar{    width:150px;
 							height: 80%;
@@ -37,7 +44,7 @@
 							margin-left: 10%;
 							float:left;
 							background-color: #F6C2C2;
-							box-shadow: 10px 10px 5px #888888;
+							box-shadow:10px 10px 5px #888888;
 							;}
 							
 			.screen {width: 100%;}
@@ -50,9 +57,12 @@
 			a:hover {
 				color: Black;
 				font-weight: bold;
-				border-style: groove;
-				box-shadow: 10px 10px 5px #888888;
-				border-color: transparent transparent darkgrey transparent
+				text-indent:14%;
+				background-color: #f6c8c8;
+				border-style: outset;
+				border-width:thin;
+				box-shadow: 10px 10px 5px #ac8787;
+				border-color: #ddaeae;
 				}
 			input
 
