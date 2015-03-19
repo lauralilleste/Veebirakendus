@@ -3,7 +3,7 @@
 		<style>
 			body{}
 			body {
-				margin: 0% 10% 0% 10%;
+				margin: 0% 0% 0% 0%;
 				padding: 0;
 				font-family: 'Open Sans',sans-serif;
 				font-size: 13px;
@@ -14,8 +14,9 @@
 			header{
 				margin: 0%;
 				height: 10%;
-				background-color: #A7DBD8;
+				background-color: #363636;
 				text-align:center;
+				color: white;
 				line-height: 60px;
 			}
 			 h1 {margin-top: 0px;
@@ -32,10 +33,11 @@
 			 }
 			.sidebar{    width:150px;
 							height: 80%;
-							
 							margin-right:10px;
+							margin-left: 10%;
 							float:left;
-							background-color: #F6C2C2
+							background-color: #F6C2C2;
+							box-shadow: 10px 10px 5px #888888;
 							;}
 							
 			.screen {width: 100%;}
@@ -49,6 +51,7 @@
 				color: Black;
 				font-weight: bold;
 				border-style: groove;
+				box-shadow: 10px 10px 5px #888888;
 				border-color: transparent transparent darkgrey transparent
 				}
 			input
