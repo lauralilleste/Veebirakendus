@@ -6,6 +6,9 @@
       // Logged into your app and Facebook.
       testAPI();
     }
+    else{
+	document.getElementById("style2").innerHTML = "<style>#soovitama a:hover{} #kutsu a:hover{}</style>";
+    }
   }
 
   function checkLoginState() {
@@ -41,12 +44,11 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
-        document.getElementById('nimi').innerHTML =
-        response.name;
+        document.getElementById("nimi").innerHTML = response.name;
 	document.getElementById("soovitama").innerHTML = "Soovitama";
-   	document.getElementById("soovitama").href = "soovitama.html";
 	document.getElementById("kutsu").innerHTML = "Kutsu";
-	document.getElementById("kutsu").href = "kutsu.html";
+	document.getElementById("soovitama").herf = "soovitama.html";
+	document.getElementById("kutsu").herf = "kutsu.html";
     });
   }
 </script>
