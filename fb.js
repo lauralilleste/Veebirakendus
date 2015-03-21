@@ -1,4 +1,3 @@
-<script>
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -51,4 +50,3 @@
 	document.getElementById("kutsu").herf = "kutsu.html";
     });
   }
-</script>
