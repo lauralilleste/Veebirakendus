@@ -33,9 +33,11 @@
 			</ul>
 		</div>
 		<div class="screen">
-			<h3>Otsi kandidaati:</h3>
-			<input NAME="kandidaat1" type="text" size=50 ><br>
-			<input TYPE=submit VALUE="Otsi">
+			<h3>Anna hääl kandidaadile:</h3>
+			<form method="post" action="vote.php" enctype="multipart/form-data" >
+				Name <input type="text" name="vote_name" id="vote_name"/></br>
+				<input type="submit" name="submit" value="Anna hääl!" />
+			</form>
 			<br><br>
 
 		</div>
