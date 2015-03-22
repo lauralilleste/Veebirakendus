@@ -1,13 +1,18 @@
 <?php
-$link = mysql_connect('localhost', 'mysql_user', 'mysql_password');
-if (!$link) {
-    die('Could not connect: ' . mysql_error());
-}
+// DB connection info
 
-$sql = 'DROP DATABASE election_tbl';
-if (mysql_query($sql, $link)) {
-    echo "Database my_db was successfully dropped\n";
-} else {
-    echo 'Error dropping database: ' . mysql_error() . "\n";
+$host = "eu-cdbr-azure-north-c.cloudapp.net";
+$user = "b17689f0b6725e";
+$pwd = "ce8a018e";
+$db = "soovitaDB";
+try{
+    $conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
+    $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+    $sql = "DROP TABLE election_tbl";
+    $conn->query($sql);
 }
+catch(Exception $e){
+    die(print_r($e));
+}
+echo "<h3>Table deleted.</h3>";
 ?>
