@@ -4,16 +4,9 @@
 			Soovitus
 		</TITLE>
 		<link href="style.css" rel="stylesheet" type="text/css" >
+		<script src="fb.js"></script>
 	</HEAD>
 	<body>
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=812071988882674&version=v2.0";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
 		<header>
 			<h1>Kandidaadid</h1>
 		</header>
@@ -21,11 +14,12 @@
 			
 			<a href="index.html">Avalehele</a>
 			<a href="soovitajad.html">Soovitajad</a>
-			<a href="soovitama.html">Soovitama</a>
+			<a id="soovitama"></a>
 			<a href="kandidaadid.html">Kandidaadid</a>
-			<a href="kutsu.html">Kutsu</a>
+			<a id="kutsu"></a>
+			<div id="nimi"></div>
 			<div class="fb-login-button" data-max-rows="1" data-size="large"
-			 data-show-faces="false" data-auto-logout-link="true"></div>
+			 data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></div>
 		</nav>
 		<div class="sidebar">
 			<ul>

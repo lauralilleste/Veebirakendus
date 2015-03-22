@@ -5,9 +5,6 @@
       // Logged into your app and Facebook.
       testAPI();
     }
-    else{
-	document.getElementById("style2").innerHTML = "<style>#soovitama a:hover{} #kutsu a:hover{}</style>";
-    }
   }
 
   function checkLoginState() {
