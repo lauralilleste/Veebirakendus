@@ -12,11 +12,11 @@
 	Info <input type="text" name="info" id="info"/></br>
 	Page <input type="text" name="page" id="page"/></br>
 	Anna ka hääl?:
-		<input type="radio" name="votes" id="0" checked>
+		<input type="radio" name="votes" value="0" checked>
 		<label for="e1">Ei</label><br />
 		<input type="radio" name="votes" value="1">
 		<label for="e2">Jah</label><br />
-	<input type="submit" name="submit" value="Submit" />
+	<input type="submit" name="submit" value="Salvesta" />
 </form>
 <?php
 // DB connection info
