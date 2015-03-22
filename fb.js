@@ -42,8 +42,13 @@
     FB.api('/me', function(response) {
         document.getElementById("nimi").innerHTML = response.name;
 	document.getElementById("soovitama").innerHTML = "Soovitama";
+	document.getElementById("soovitama").href = "soovitama.html";
 	document.getElementById("kutsu").innerHTML = "Kutsu";
-	document.getElementById("soovitama").herf = "soovitama.html";
-	document.getElementById("kutsu").herf = "kutsu.html";
+	document.getElementById("kutsu").href = "kutsu.html";
     });
   }
+
+   FB.Event.subscribe('auth.logout', logout_event);
+    function logout_event() {
+	 window.location.href = "index.html";
+	}
