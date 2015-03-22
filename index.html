@@ -34,8 +34,9 @@
 		
 		<div class="screen">
 			<div class="top">
-				<p>Top 10 riigikogu kandidaati.</p>
+				
 				<?php
+					echo "Top 10 riigikogu kandidaati.";
 					// DB connection info
 					$host = "eu-cdbr-azure-north-c.cloudapp.net";
 					$user = "b17689f0b6725e";
@@ -43,10 +44,10 @@
 					$db = "soovitaDB";
 					// Connect to database.
 						$conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
-						$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+
 						$sql_select = "SELECT * FROM elections_tbl where election='riigikogu' Order by votes DESC LIMIT 10";
 						$stmt = $conn->query($sql_select);
-						 
+						
 						if($stmt->num_rows > 0) {
 							while($row = $stmt->fetch_assoc()) {
 								echo "Nimi: " . $row["name"]. "- hääli:" . $row["votes"]. "<br>";
@@ -62,31 +63,7 @@
 			</div>
 			<div class="top">
 				<p>Top 10 kohalike omavalitsuste kandidaati.</p>
-				<?php $sql_select = "SELECT * FROM elections_tbl";
-					$stmt = $conn->query($sql_select);
-					$elections = $stmt->fetchAll(); 
-					if(count($elections) > 0) {
-						echo "<h2>Lisatud kanditaadid:</h2>";
-						echo "<table>";
-						echo "<tr><th>Election</th>";
-						echo "<th>Name</th>";
-						echo "<th>Info</th>";
-						echo "<th>Page</th>";
-						echo "<th>Votes</th>";
-						echo "<th>Date</th></tr>";
-						foreach($elections as $election) {
-							echo "<tr><td>".$election['election']."</td>";
-							echo "<td>".$election['name']."</td>";
-							echo "<td>".$election['info']."</td>";
-							echo "<td>".$election['page']."</td>";
-							echo "<td>".$election['votes']."</td>";
-							echo "<td>".$election['date']."</td></tr>";
-						}
-						echo "</table>";
-						mysql_close();
-					} else {
-						echo "<h3>No one is currently registered.</h3>";
-					}?>
+				<?php include 'topkohalik.php';?>
 			</div>
 			<div class="top">
 				<p>Top 10 presidendi kanditaati.</p>
