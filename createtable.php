@@ -8,11 +8,14 @@ $db = "soovitaDB";
 try{
     $conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
     $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-    $sql = "CREATE TABLE registration_tbl(
+    $sql = "CREATE TABLE election_tbl(
                 id INT NOT NULL AUTO_INCREMENT, 
                 PRIMARY KEY(id),
+				election VARCHAR(50),
                 name VARCHAR(30),
-                email VARCHAR(30),
+                info VARCHAR(30),
+				page VARCHAR(50),
+				votes INTEGER,
                 date DATE)";
     $conn->query($sql);
 }

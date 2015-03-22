@@ -37,21 +37,10 @@
 			<input NAME="kandidaat1" type="text" size=50 ><br>
 			<input TYPE=submit VALUE="Otsi">
 			<br><br>
-			<h3>Lisa kandidaat:</h3>
-			Valimised:<br>
-			<SELECT NAME="valimised" MULTIPLE>
-				<OPTION  SELECTED>Riigikogu valimised
-				<OPTION>Kohaliku volikogu valimised
-				<OPTION>Presidendi valimised
-			</SELECT><br>
 
-			Nimi:<br>
-			<input NAME="nimi" type="text" size=50 ><br>
-			Info:<br>
-			<TEXTAREA NAME="info" ROWS="2" COLS="50"></TEXTAREA><br>
-			Veebileht:<br>
-			<TEXTAREA NAME="veebileht" ROWS="2" COLS="50"></TEXTAREA><br>
-			<INPUT TYPE=submit VALUE="Lisa kanditaat">
+		</div>
+		<div class=screen>
+			<?php include 'lisakandidaat.php';?>
 		</div>
 	</body> 
  
