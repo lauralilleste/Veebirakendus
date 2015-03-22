@@ -48,10 +48,7 @@
 	document.getElementById("soovitama").href = "soovitama.html";
 	document.getElementById("kutsu").innerHTML = "Kutsu";
 	document.getElementById("kutsu").href = "kutsu.html";
-	document.getElementById("style2").innerHTML = "			#soovitama:hover{padding: 3%}
-			#kutsu:hover{padding: 3%}
-			#soovitama{padding: 3%}
-			#kutsu{padding: 3%}";
+	document.getElementById("style2").innerHTML = "#soovitama:hover{padding: 3%} #kutsu:hover{padding: 3%} #soovitama{padding: 3%} #kutsu{padding: 3%}";
     });
   }
 
