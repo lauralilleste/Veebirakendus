@@ -70,13 +70,13 @@ if(count($elections) > 0) {
     echo "<th>Page</th>";
     echo "<th>Votes</th>";
     echo "<th>Date</th></tr>";
-    foreach($registrants as $registrant) {
-        echo "<tr><td>".$registrant['election']."</td>";
-        echo "<td>".$registrant['name']."</td>";
-        echo "<td>".$registrant['info']."</td>";
-        echo "<td>".$registrant['page']."</td>";
-        echo "<td>".$registrant['votes']."</td>";
-        echo "<td>".$registrant['date']."</td></tr>";
+    foreach($elections as $election) {
+        echo "<tr><td>".$election['election']."</td>";
+        echo "<td>".$election['name']."</td>";
+        echo "<td>".$election['info']."</td>";
+        echo "<td>".$election['page']."</td>";
+        echo "<td>".$election['votes']."</td>";
+        echo "<td>".$election['date']."</td></tr>";
     }
     echo "</table>";
 } else {
