@@ -21,7 +21,7 @@ try {
 	$votes = $_POST['votes'];
     $date = date("Y-m-d");
     // Insert data
-    $sql_insert = "INSERT INTO election_tbl (election, name, info, page, votes, date) 
+    $sql_insert = "INSERT INTO elections_tbl (election, name, info, page, votes, date) 
                    VALUES (?,?,?,?,?,?)";
     $stmt = $conn->prepare($sql_insert);
     $stmt->bindValue(1, $election);
@@ -38,7 +38,7 @@ catch(Exception $e) {
 echo "<h3>Kanditaat lisatud!</h3>";
 }
 
-$sql_select = "SELECT * FROM election_tbl";
+$sql_select = "SELECT * FROM elections_tbl";
 $stmt = $conn->query($sql_select);
 $elections = $stmt->fetchAll(); 
 if(count($elections) > 0) {

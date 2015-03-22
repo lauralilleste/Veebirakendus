@@ -8,7 +8,7 @@ $db = "soovitaDB";
 try{
     $conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
     $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-    $sql = "CREATE TABLE election_tbl(
+    $sql = "CREATE TABLE elections_tbl(
                 id INT NOT NULL AUTO_INCREMENT, 
                 PRIMARY KEY(id),
 				election VARCHAR(50),
@@ -16,7 +16,8 @@ try{
                 info VARCHAR(30),
 				page VARCHAR(50),
 				votes INTEGER,
-                date DATE)";
+                date DATE,
+				unique key(name))";
     $conn->query($sql);
 }
 catch(Exception $e){
