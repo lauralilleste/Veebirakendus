@@ -74,9 +74,10 @@
 				}
 			.fb-login-button{
 				float: right;}
-			#nimi{
-				display: inline-block
+			#nimi {
+				display: inline
 				}
+			#style {display: none}
 
 			input
 		</style>

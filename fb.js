@@ -5,6 +5,12 @@
       // Logged into your app and Facebook.
       testAPI();
     }
+    else{
+	document.getElementById("style2").innerHTML = "			#soovitama:hover{padding: 0%}
+			#kutsu:hover{padding: 0%}
+			#soovitama{padding: 0%}
+			#kutsu{padding: 0%}";
+	}			
   }
 
   function checkLoginState() {
@@ -25,7 +31,10 @@
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
   });
-
+  FB.Event.subscribe('auth.logout', logout_event);
+    function logout_event() {
+	 window.location.href = "index.html";
+	}
   };
 
   // Load the SDK asynchronously
@@ -48,7 +57,3 @@
     });
   }
 
-   FB.Event.subscribe('auth.logout', logout_event);
-    function logout_event() {
-	 window.location.href = "index.html";
-	}
