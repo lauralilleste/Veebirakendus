@@ -22,7 +22,7 @@
 			}
 			header{
 				margin: 0%;
-				height: 10%;
+				height: 60px;
 				background-color: #363636;
 				text-align:center;
 				color: white;
@@ -72,12 +72,12 @@
 				border-width:thin;
 				border-color: #ddaeae;
 				}
-			.fb-login-button{
-				float: right;}
 			#nimi {
 				display: inline;
 				float: right;
 				}
+			.fb-login-button{
+				float: right;}
 			#style2 {display: none}
 			#soovitama:hover{padding: 0%}
 			#kutsu:hover{padding: 0%}
