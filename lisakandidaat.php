@@ -2,11 +2,11 @@
 <p>Täida ankeet ja kliki <strong>salvesta</strong> .</p>
 <form method="post" action="lisakandidaat.php" enctype="multipart/form-data" >
 	Valimised: 
-		<input type="radio" name="election" id="riigikogu" checked>
+		<input type="radio" name="election" value="riigikogu" checked>
 		<label for="e1">Riigikogu valimised</label><br />
-		<input type="radio" name="election" id="kohalik">
+		<input type="radio" name="election" value="kohalik">
 		<label for="e2">Kohaliku volikogu valimised</label><br />
-		<input type="radio" name="election" id="president">
+		<input type="radio" name="election" value="president">
 		<label for="e3">Presidendi valimised</label><br />
 	Name <input type="text" name="name" id="name"/></br>
 	Info <input type="text" name="info" id="info"/></br>
