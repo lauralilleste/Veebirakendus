@@ -15,9 +15,8 @@ catch(Exception $e){
 if(!empty($_POST)) {
 try {
 	$vote_name = $_POST['vote_name'];
-	$votes = $_POST['votes'];
     // Insert data
-    $sql = "UPDATE elections_tbl SET votes=votes+1 WHERE name=vote_name;";
+    $sql = "UPDATE elections_tbl SET votes=votes+1 WHERE name='$vote_name'";
 	if ($conn->query($sql) === TRUE) {
 		echo "Hääl antud!";
 	} else {
