@@ -78,7 +78,10 @@
 				display: inline
 				}
 			#style {display: none}
-
+			#soovitama:hover{padding: 0%}
+			#kutsu:hover{padding: 0%}
+			#soovitama{padding: 0%}
+			#kutsu{padding: 0%}			
 			input
 		</style>
 	</body>

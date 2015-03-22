@@ -4,13 +4,7 @@
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
       testAPI();
-    }
-    else{
-	document.getElementById("style2").innerHTML = "			#soovitama:hover{padding: 0%}
-			#kutsu:hover{padding: 0%}
-			#soovitama{padding: 0%}
-			#kutsu{padding: 0%}";
-	}			
+    }			
   }
 
   function checkLoginState() {
@@ -54,6 +48,10 @@
 	document.getElementById("soovitama").href = "soovitama.html";
 	document.getElementById("kutsu").innerHTML = "Kutsu";
 	document.getElementById("kutsu").href = "kutsu.html";
+	document.getElementById("style2").innerHTML = "			#soovitama:hover{padding: 3%}
+			#kutsu:hover{padding: 3%}
+			#soovitama{padding: 3%}
+			#kutsu{padding: 3%}";
     });
   }
 
