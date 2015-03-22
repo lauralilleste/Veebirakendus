@@ -53,7 +53,7 @@
 							}
 							mysql_close();
 						} else {
-							echo "<h3>KEdagi pole lisatud.</h3>";
+							echo "<h3>Kedagi pole lisatud.</h3>";
 						}
 					}
 					$mysqli->close();
@@ -62,7 +62,31 @@
 			</div>
 			<div class="top">
 				<p>Top 10 kohalike omavalitsuste kandidaati.</p>
-				<?php include 'topkohalik.php';?>
+				<?php $sql_select = "SELECT * FROM elections_tbl";
+					$stmt = $conn->query($sql_select);
+					$elections = $stmt->fetchAll(); 
+					if(count($elections) > 0) {
+						echo "<h2>Lisatud kanditaadid:</h2>";
+						echo "<table>";
+						echo "<tr><th>Election</th>";
+						echo "<th>Name</th>";
+						echo "<th>Info</th>";
+						echo "<th>Page</th>";
+						echo "<th>Votes</th>";
+						echo "<th>Date</th></tr>";
+						foreach($elections as $election) {
+							echo "<tr><td>".$election['election']."</td>";
+							echo "<td>".$election['name']."</td>";
+							echo "<td>".$election['info']."</td>";
+							echo "<td>".$election['page']."</td>";
+							echo "<td>".$election['votes']."</td>";
+							echo "<td>".$election['date']."</td></tr>";
+						}
+						echo "</table>";
+						mysql_close();
+					} else {
+						echo "<h3>No one is currently registered.</h3>";
+					}?>
 			</div>
 			<div class="top">
 				<p>Top 10 presidendi kanditaati.</p>

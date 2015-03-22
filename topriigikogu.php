@@ -27,6 +27,6 @@ if(count($elections) > 0) {
     echo "</table>";
 	mysql_close();
 } else {
-    echo "<h3>KEdagi pole lisatud.</h3>";
+    echo "<h3>Kedagi pole lisatud.</h3>";
 }
 ?>
