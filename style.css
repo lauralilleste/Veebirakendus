@@ -75,9 +75,10 @@
 			.fb-login-button{
 				float: right;}
 			#nimi {
-				display: inline
+				display: inline;
+				float: right;
 				}
-			#style {display: none}
+			#style2 {display: none}
 			#soovitama:hover{padding: 0%}
 			#kutsu:hover{padding: 0%}
 			#soovitama{padding: 0%}
