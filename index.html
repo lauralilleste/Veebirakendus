@@ -45,27 +45,27 @@
 					try {
 						$conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
 						$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+						$sql_select = "SELECT * FROM elections_tbl Order by votes  DESC LIMIT 10 where election='riigikogu'";
+						$stmt = $conn->query($sql_select);
+						$elections = $stmt->fetchAll(); 
+						if(count($elections) > 0) {
+							echo "<table>";
+							echo "<tr><th>Name</th>";
+							echo "<th>Votes</th>";
+							foreach($elections as $election1) {
+								echo "<td>".$election1['name']."</td>";
+								echo "<td>".$election1['votes']."</td>""</tr>";
+							}
+							echo "</table>";
+							mysql_close();
+						} else {
+							echo "<h3>KEdagi pole lisatud.</h3>";
+						}
 					}
 					catch(Exception $e){
 						die(var_dump($e));
 					}
-
-					$sql_select = "SELECT * FROM elections_tbl Order by votes  DESC LIMIT 10 where election='riigikogu'";
-					$stmt = $conn->query($sql_select);
-					$elections = $stmt->fetchAll(); 
-					if(count($elections) > 0) {
-						echo "<table>";
-						echo "<tr><th>Name</th>";
-						echo "<th>Votes</th>";
-						foreach($elections as $election) {
-							echo "<td>".$election['name']."</td>";
-							echo "<td>".$election['votes']."</td>""</tr>";
-						}
-						echo "</table>";
-						mysql_close();
-					} else {
-						echo "<h3>KEdagi pole lisatud.</h3>";
-					}
+					$mysqli->close();
 					?>
 
 			</div>
