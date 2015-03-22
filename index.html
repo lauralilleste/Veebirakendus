@@ -37,32 +37,7 @@
 		<div class="screen">
 			<div class="top">
 				<p>Top 10 riigikogu kandidaati.</p>
-				<?php
-					// DB connection info
-					$host = "eu-cdbr-azure-north-c.cloudapp.net";
-					$user = "b17689f0b6725e";
-					$pwd = "ce8a018e";
-					$db = "soovitaDB";
-					// Connect to database.
-						$conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
-						$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-						if ($conn->connect_error) {
-							die("Connection failed: " . $conn->connect_error);
-						} 
-						$sql_select = "SELECT * FROM elections_tbl where election='riigikogu' Order by votes DESC LIMIT 10";
-						$stmt = $conn->query($sql_select);
-						
-						if($stmt->num_rows > 0) {
-							while($row = $stmt->fetch_assoc()) {
-								echo "Nimi: " . $row["name"]. "- hääli:" . $row["votes"]. "<br>";
-							}
-							mysql_close();
-						} else {
-							echo "<h3>Kedagi pole lisatud.</h3>";
-						}
-					}
-					$mysqli->close();
-					?>
+
 
 			</div>
 			<div class="top">
