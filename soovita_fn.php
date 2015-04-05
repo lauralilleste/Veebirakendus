@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<?php include "header.php";>
+
 <?php
 echo "tekst";
 session_start();

@@ -19,8 +19,7 @@ $elections = $stmt->fetchAll();
 if(count($elections) > 0) {
 	$sum = $elections['value'];
     echo "kokku on hääletatud: ";
-    echo $sum;
-
+    echo $elections['value'];
 	mysql_close();
 } else {
     echo "<h3>Kedagi pole lisatud.</h3>";
