@@ -24,7 +24,7 @@ if(count($elections) > 0) {
     echo "<tr><th>Name</th>";
     echo "<th>Votes</th></tr>";
     foreach($elections as $election) {
-		print_r($election]);
+		print_r($election);
         echo "<tr><td>".$election['name']."</td>";
         echo "<td>".$election['votes']."</td></tr>";
     }
