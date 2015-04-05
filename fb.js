@@ -27,7 +27,7 @@
   });
   FB.Event.subscribe('auth.logout', logout_event);
     function logout_event() {
-	 window.location.href = "index.html";
+	 window.location.href = "index.php";
 	}
   };
 

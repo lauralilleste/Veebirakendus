@@ -41,7 +41,15 @@ session_start();
 	 $helper = new FacebookRedirectLoginHelper($redirect_url);
 	 $sess = $helper->getSessionFromRedirect();
 if(isset($sess)){
-		
+	
+	?>
+			<h3>Anna hääl kandidaadile:</h3>
+			<form method="post" action="vote.php" enctype="multipart/form-data" >
+				Name <input type="text" name="vote_name" id="vote_name"/></br>
+				<input type="submit" name="submit" value="Anna hääl!" />
+			</form>
+			<br>
+	<?php
 		//create request object,execute and capture response
 		$request = new FacebookRequest($sess, 'GET', '/me');
 		// from response get graph object
@@ -57,6 +65,15 @@ if(isset($sess)){
 
 else if ($_SESSION['username']){
 		echo "Tere $name1";
+		?>
+		
+			<h3>Anna hääl kandidaadile:</h3>
+			<form method="post" action="vote.php" enctype="multipart/form-data" >
+				Name <input type="text" name="vote_name" id="vote_name"/></br>
+				<input type="submit" name="submit" value="Anna hääl!" />
+			</form>
+			<br>
+		<?php
 
 }
 else {
