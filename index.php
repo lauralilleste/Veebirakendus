@@ -4,9 +4,11 @@ include "header.php";
 ?>
 	
 		<div class="screen">
+		<div>
 			<?php
 			include "votes.php";
 			?>
+			</div>
 			<div class="top">
 				<p>Top 10 riigikogu kandidaati.</p>
 				<?php

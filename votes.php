@@ -17,7 +17,7 @@ $sql_select = "SELECT SUM(Votes) AS value FROM elections_tbl";
 $stmt = $conn->query($sql_select);
 $elections = $stmt->fetchAll(); 
 if(count($elections) > 0) {
-	$sum = $elections['value_sum'];
+	$sum = $elections['value'];
     echo "kokku on hääletatud: ";
     echo $sum;
 
