@@ -15,14 +15,14 @@ catch(Exception $e){
     die(var_dump($e));
 }
 
-$sql_select = "SELECT SUM(Votes) AS value FROM elections_tbl";
+$sql_select = "SELECT SUM(Votes) AS value_1 FROM elections_tbl";
 $stmt = $conn->query($sql_select);
 $elections = $stmt->fetchAll(); 
 if(count($elections) > 0) {
-	$sum = $elections['value'];
+	echo $elections;
+	$sum = $elections['value_1'];
     echo "kokku on hääletatud: ";
-    echo $elections['value'];
-	mysql_close();
+    echo $sum;
 } else {
     echo "<h3>Kedagi pole lisatud.</h3>";
 }
