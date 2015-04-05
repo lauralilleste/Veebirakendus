@@ -1,0 +1,12 @@
+CACHE MANIFEST
+
+# Explicitly cached 'master entries'.
+CACHE:
+index.php
+style.css
+Facebooklogo.jpeg
+topriigikogu.php
+topkohalik.php
+toppresident.php
+fb.js
+
