@@ -17,16 +17,25 @@ $sql_select = "SELECT * FROM elections_tbl Order by votes DESC LIMIT 10 where el
 $stmt = $conn->query($sql_select);
 $elections = $stmt->fetchAll(); 
 if(count($elections) > 0) {
+    echo "<h2>Lisatud kanditaadid:</h2>";
     echo "<table>";
-    echo "<tr><th>Name</th>";
+    echo "<tr><th>Election</th>";
+    echo "<th>Name</th>";
+    echo "<th>Info</th>";
+    echo "<th>Page</th>";
     echo "<th>Votes</th>";
+    echo "<th>Date</th></tr>";
     foreach($elections as $election) {
+        echo "<tr><td>".$election['election']."</td>";
         echo "<td>".$election['name']."</td>";
-        echo "<td>".$election['votes']."</td>""</tr>";
+        echo "<td>".$election['info']."</td>";
+        echo "<td>".$election['page']."</td>";
+        echo "<td>".$election['votes']."</td>";
+        echo "<td>".$election['date']."</td></tr>";
     }
     echo "</table>";
 	mysql_close();
 } else {
-    echo "<h3>Kedagi pole lisatud.</h3>";
+    echo "<h3>No one is currently registered.</h3>";
 }
 ?>
