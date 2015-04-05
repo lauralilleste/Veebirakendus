@@ -19,10 +19,10 @@ $elections = $stmt->fetchAll();
 if(count($elections) > 0) {
     echo "<table>";
     echo "<tr><th>Name</th>";
-    echo "<th>Votes</th>";
+    echo "<th>Votes</th></tr>";
     foreach($elections as $election) {
-        echo "<td>".$election['name']."</td>";
-        echo "<td>".$election['votes']."</td>""</tr>";
+        echo "<tr><td>".$election['name']."</td>";
+        echo "<td>".$election['votes']."</td></tr>";
     }
     echo "</table>";
 	mysql_close();
