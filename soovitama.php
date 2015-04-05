@@ -5,7 +5,7 @@ include "header.php";
 		<div class="screen">
 		<p>tekst</p>
 			<?php
-			include "soovitama.php";
+			include "soovita_fn.php";
 			?>
 			<br/>
 			<br/>
