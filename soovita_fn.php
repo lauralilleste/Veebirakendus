@@ -39,7 +39,6 @@ session_start();
 	 $sess = $helper->getSessionFromRedirect();
 
 	 if(isset($sess)){
-			echo "Tere $name1";
 	?>
 			<h3>Anna hääl kandidaadile:</h3>
 			<form method="post" action="vote.php" enctype="multipart/form-data" >
@@ -57,7 +56,6 @@ session_start();
 		$name1= $graph->getName();
 }
 	else if ($_SESSION['username']){
-		echo "Tere $name1";
 		?>
 			<h3>Anna hääl kandidaadile:</h3>
 			<form method="post" action="vote.php" enctype="multipart/form-data" >

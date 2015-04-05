@@ -20,8 +20,8 @@ try {
 	if ($conn->query($sql) === TRUE) {
 		echo "Hääl antud!";
 	} else {
-    echo "Antud kanditaati pole lisatud: ";
-}
+		echo "Antud kanditaati pole lisatud ";
+	}
 }
 catch(Exception $e) {
     die(var_dump($e));

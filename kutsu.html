@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>	
+<HTML> 
 	<HEAD> 
 		<TITLE>
 			Soovitus
@@ -9,19 +8,22 @@
 		<script src="fb.js"></script>
 	</HEAD>
 	<body>
+
 		<header>
-			<h1>Poliitiline soovitusleht</h1>
+			<h1>Kutsu</h1>
 		</header>
 		<div id="style2"></div>
-		<nav>			
-			<a href="index.php">Avalehele</a>
-			<a href="soovitajad.php">Soovitajad</a>
-			<a href="soovitama.php">Soovitama</a>
-			<a href="kandidaadid.php">Kandidaadid</a>
+		<nav>
+			
+			<a href="index.html">Avalehele</a>
+			<a href="soovitajad.html">Soovitajad</a>
+			<a id="soovitama"></a>
+			<a href="kandidaadid.html">Kandidaadid</a>
 			<a id="kutsu"></a>
 			<div id="nimi"></div>
 			<div class="fb-login-button" data-max-rows="1" data-size="large"
 			 data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></div>
+			
 		</nav>
 		<div class="sidebar">
 			<ul>
@@ -33,3 +35,14 @@
 				<p>Reklaam paremal servas</p>
 			</ul>
 		</div>
+		<div class="screen">
+			<h3>Kutsu soovitama:</h3>
+			Email:<br>
+			<input NAME="email" type="text" size=50 ><br>
+			Lisa tekst:<br>
+			<TEXTAREA NAME="lisatekst" ROWS="1" COLS="50"></TEXTAREA><br>
+			<br><INPUT TYPE=submit VALUE="Kutsu"><br>
+		</div>
+	</body> 
+ 
+</HTML>
