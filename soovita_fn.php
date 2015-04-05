@@ -48,15 +48,14 @@ if(isset($sess)){
 		$name1= $graph->getName();
 		echo "Tere $name1";
 		echo "<p>";
-		?>
+
 }
-<?php
+
 
 else if ($_SESSION['username']){
 		echo "Tere $name1";
 		echo "<p>";
-		?>
-	<?php
+
 }
 else {
 	echo "Selle lehe vaatamiseks pead olema sisse logitud! Logi sisse kasutades Facebooki.";
@@ -64,6 +63,5 @@ else {
 	$name = $_POST['name'];                     
 			$password = $_POST['password'];
 	
-	?>
 
 ?>
