@@ -1,4 +1,5 @@
 <?php
+echo "tekst"
 session_start();
 /* INCLUSION OF LIBRARY FILEs*/
   require_once( 'lib/Facebook/FacebookSession.php');
@@ -31,6 +32,7 @@ session_start();
   use Facebook\FacebookCurlHttpClient;
   use Facebook\FacebookCurl;
 	 $app_id = '812071988882674';
+	 $app_secret = '43be086416a7de6f97a6d1c0c9581858';
 	 $redirect_url='http://soovita.azurewebsites.net/soovitama.php';
 	  FacebookSession::setDefaultApplication($app_id,$app_secret);
 	 $helper = new FacebookRedirectLoginHelper($redirect_url);
