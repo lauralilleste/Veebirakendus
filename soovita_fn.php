@@ -40,7 +40,8 @@ session_start();
 	  FacebookSession::setDefaultApplication($app_id,$app_secret);
 	 $helper = new FacebookRedirectLoginHelper($redirect_url);
 	 $sess = $helper->getSessionFromRedirect();
-if(isset($sess)){
+
+	 if(isset($sess)){
 	
 	?>
 			<h3>Anna hääl kandidaadile:</h3>
@@ -58,11 +59,7 @@ if(isset($sess)){
 		// use graph object methods to get user details
 		$name1= $graph->getName();
 		echo "Tere $name1";
-		echo "<p>";
-
 }
-
-
 else if ($_SESSION['username']){
 		echo "Tere $name1";
 		?>
@@ -78,5 +75,6 @@ else if ($_SESSION['username']){
 }
 else {
 	echo "Selle lehe vaatamiseks pead olema sisse logitud! Logi sisse kasutades Facebooki.";
+	echo '<a href='.$helper->getLoginUrl().'><img border="0" src="Facebooklogo.jpeg"></a>';
 }
 ?>
