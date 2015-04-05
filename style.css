@@ -1,104 +1,19 @@
-body {
-margin : 0% 0% 0% 0%;
-padding : 0;
-font-family : 'Open Sans', sans-serif;
-font-size : 13px;
-line-height : 30px;
-background-color : #EBEBEB;
-}
-nav {
-background-color : #F6C2C2;
-padding-left : 10%;
-padding-right : 10%;
-height : 30px;
-font-size : 17px;
-text-align : center;
-vertical-align : middle;
-margin : 0%;
-}
-header {
-margin : 0%;
-height : 60px;
-background-color : #363636;
-text-align : center;
-color : white;
-line-height : 60px;
-}
-h1 {
-margin-top : 0;
-text-align : center;
-font-size : 30px;
-vertical-align : middle;
-}
-ul {
-margin : 0;
-margin-top : 8%;
-padding : 0;
-}
-a {
-text-decoration : none;
-color : black;
-padding-left : 3%;
-padding-right : 3%;
-}
-b {
-width : 20%;
-height : 20%;
-border="2"
-}
-.sidebar {
-width : 10%;
-height : 100%;
-float : left;
-background-color : #D4EDF4;
-}
-.sidebar2 {
-width : 10%;
-height : 100%;
-float : right;
-background-color : #D4EDF4;
-}
-.screen {
-width : 100%;
-margin-top : 2%;
-margin-left : 12%;
-margin-right : 12%;
-}
-.top {
-width : 25%;
-float : left;
-text-align : center;
-border-style : solid;
-border-width : 1px;
-border-color : black;
-}
-a:hover {
-color : black;
-text-indent : 14%;
-background-color : #f6c8c8;
-border-style : outset;
-border-width : thin;
-border-color : #ddaeae;
-}
-#nimi {
-display : inline;
-float : right;
-}
-.fb-login-button {
-float : right;
-}
-#style2 {
-display : none;
-}
-#soovitama:hover {
-padding : 0%;
-}
-#kutsu:hover {
-padding : 0%;
-}
-#soovitama {
-padding : 0%;
-}
-#kutsu {
-padding : 0%;
-}
+body{margin:0% 0% 0% 0%;padding:0;font-family:'Open Sans', sans-serif;font-size:13px;line-height:30px;background-color:#EBEBEB;}
+nav{background-color:#F6C2C2;padding-left:10%;padding-right:10%;height:30px;font-size:17px;text-align:center;vertical-align:middle;margin:0%;}
+header{margin:0%;height:60px;background-color:#363636;text-align:center;color:white;line-height:60px;}
+h1{margin-top:0;text-align:center;font-size:30px;vertical-align:middle;}
+ul{margin:0;margin-top:8%;padding:0;}
+a{text-decoration:none;color:black;padding-left:3%;padding-right:3%;}
+b{width:20%;height:20%;border="2"}
+.sidebar{width:10%;height:100%;float:left;background-color:#D4EDF4;}
+.sidebar2{width:10%;height:100%;float:right;background-color:#D4EDF4;}
+.screen{width:100%;margin-top:2%;margin-left:12%;margin-right:12%;}
+.top{width:25%;float:left;text-align:center;border-style:solid;border-width:1px;border-color:black;}
+a:hover{color:black;text-indent:14%;background-color:#f6c8c8;border-style:outset;border-width:thin;border-color:#ddaeae;}
+#nimi{display:inline;float:right;}
+.fb-login-button{float:right;}
+#style2{display:none;}
+#soovitama:hover{padding:0%;}
+#kutsu:hover{padding:0%;}
+#soovitama{padding:0%;}
+#kutsu{padding:0%;}
