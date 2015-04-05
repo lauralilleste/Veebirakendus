@@ -70,5 +70,6 @@ session_start();
 }
 else {
 	echo "Selle lehe vaatamiseks pead olema sisse logitud! Logi sisse vajutades Facebook logole.";
+	echo '<b href='.$helper->getLoginUrl().'><img border="0" src="Facebooklogo.jpeg"></b>';
 }
 ?>
