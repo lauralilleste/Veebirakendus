@@ -1,4 +1,7 @@
-<?php include "header.php"; ?>
+<!DOCTYPE html>
+<?php
+include "header.php";
+?>
 		<div class="screen">
 			<div class="top">
 				<p>Top 10 riigikogu kandidaati.</p>
@@ -15,4 +18,6 @@
 			</div>
 		</div>
 		
-<?php include "footer.php";>
+<?php
+include "footer.php";
+?>
