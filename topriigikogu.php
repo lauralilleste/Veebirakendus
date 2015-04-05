@@ -25,8 +25,8 @@ if(count($elections) > 0) {
     echo "<th>Votes</th></tr>";
     foreach($elections as $election) {
 		print_r($election);
-        echo "<tr><td>".$election['name']."</td>";
-        echo "<td>".$election['votes']."</td></tr>";
+        echo "<tr><td>".$election['Name']."</td>";
+        echo "<td>".$election['Votes']."</td></tr>";
     }
     echo "</table>";
 	mysql_close();

@@ -1,6 +1,4 @@
 <?php
-ini_set('display_errors',1);
-error_reporting(E_ALL);
 // DB connection info
 $host = "eu-cdbr-azure-north-c.cloudapp.net";
 $user = "b17689f0b6725e";
