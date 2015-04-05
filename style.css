@@ -41,6 +41,9 @@ color : black;
 padding-left : 3%;
 padding-right : 3%;
 }
+b {
+border="2"
+}
 .sidebar {
 width : 10%;
 height : 100%;

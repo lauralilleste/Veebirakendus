@@ -1,8 +1,5 @@
 <?php
-ini_set('display_errors',1);
-error_reporting(E_ALL);
 
-echo "tekst";
 session_start();
 /* INCLUSION OF LIBRARY FILEs*/
   require_once( 'lib/Facebook/FacebookSession.php');
@@ -73,6 +70,6 @@ session_start();
 }
 else {
 	echo "Selle lehe vaatamiseks pead olema sisse logitud! Logi sisse vajutades Facebook logole.";
-	echo '<b href='.$helper->getLoginUrl().'><img style="width: 250px; height: 50px;"  border="0" src="Facebooklogo.jpeg"></b>';
+	echo '<b href='.$helper->getLoginUrl().'><img style="width: 250px; height: 75px;"  border="0" src="Facebooklogo.jpeg"></b>';
 }
 ?>
