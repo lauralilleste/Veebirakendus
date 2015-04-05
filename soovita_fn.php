@@ -31,7 +31,7 @@ session_start();
   use Facebook\FacebookCurlHttpClient;
   use Facebook\FacebookCurl;
 	 $app_id = '812071988882674';
-	 $redirect_url='http://soovita.azurewebsites.net/soovitama.html';
+	 $redirect_url='http://soovita.azurewebsites.net/soovitama.php';
 	  FacebookSession::setDefaultApplication($app_id,$app_secret);
 	 $helper = new FacebookRedirectLoginHelper($redirect_url);
 	 $sess = $helper->getSessionFromRedirect();
