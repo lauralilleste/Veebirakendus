@@ -1,8 +1,7 @@
 CACHE MANIFEST
-
-# Explicitly cached 'master entries'.
-CACHE:
 index.php
+header.php
+footer.php
 style.css
 Facebooklogo.jpeg
 topriigikogu.php
