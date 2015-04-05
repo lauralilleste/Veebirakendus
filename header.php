@@ -14,10 +14,10 @@
 		</header>
 		<div id="style2"></div>
 		<nav>			
-			<a href="index.html">Avalehele</a>
-			<a href="soovitajad.html">Soovitajad</a>
+			<a href="index.php">Avalehele</a>
+			<a href="soovitajad.php">Soovitajad</a>
 			<a id="soovitama"></a>
-			<a href="kandidaadid.html">Kandidaadid</a>
+			<a href="kandidaadid.php">Kandidaadid</a>
 			<a id="kutsu"></a>
 			<div id="nimi"></div>
 			<div class="fb-login-button" data-max-rows="1" data-size="large"
