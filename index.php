@@ -6,7 +6,7 @@ include "header.php";
 			<div class="top">
 				<p>Top 10 riigikogu kandidaati.</p>
 				<?php
-				include "topriigikogu.php";
+				include "lisakandidaat.php";
 				?>
 			</div>
 			<div class="top">
