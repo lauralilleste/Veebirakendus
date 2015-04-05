@@ -42,7 +42,7 @@ session_start();
 	 $sess = $helper->getSessionFromRedirect();
 
 	 if(isset($sess)){
-	
+			echo "Tere $name1";
 	?>
 			<h3>Anna hääl kandidaadile:</h3>
 			<form method="post" action="vote.php" enctype="multipart/form-data" >
@@ -58,12 +58,10 @@ session_start();
 		$graph = $response->getGraphObject(GraphUser::className());
 		// use graph object methods to get user details
 		$name1= $graph->getName();
-		echo "Tere $name1";
 }
-else if ($_SESSION['username']){
+	else if ($_SESSION['username']){
 		echo "Tere $name1";
 		?>
-		
 			<h3>Anna hääl kandidaadile:</h3>
 			<form method="post" action="vote.php" enctype="multipart/form-data" >
 				Name <input type="text" name="vote_name" id="vote_name"/></br>
@@ -74,7 +72,7 @@ else if ($_SESSION['username']){
 
 }
 else {
-	echo "Selle lehe vaatamiseks pead olema sisse logitud! Logi sisse kasutades Facebooki.";
-	echo '<a href='.$helper->getLoginUrl().'><img border="0" src="Facebooklogo.jpeg"></a>';
+	echo "Selle lehe vaatamiseks pead olema sisse logitud! Logi sisse vajutades Facebook logole.";
+	echo '<b href='.$helper->getLoginUrl().'><img style="width: 250px; height: 50px;"  border="0" src="Facebooklogo.jpeg"></b>';
 }
 ?>
