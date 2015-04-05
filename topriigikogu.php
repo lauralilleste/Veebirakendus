@@ -13,7 +13,7 @@ catch(Exception $e){
     die(var_dump($e));
 }
 
-$sql_select = "SELECT * FROM elections_tbl Order by votes  DESC LIMIT 10 where election='riigikogu'";
+$sql_select = "SELECT * FROM elections_tbl Order by votes DESC LIMIT 10 where election='riigikogu'";
 $stmt = $conn->query($sql_select);
 $elections = $stmt->fetchAll(); 
 if(count($elections) > 0) {
