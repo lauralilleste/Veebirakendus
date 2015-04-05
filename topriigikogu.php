@@ -17,21 +17,12 @@ $sql_select = "SELECT TOP 10 Name, Votes FROM elections_tbl where election='riig
 $stmt = $conn->query($sql_select);
 $elections = $stmt->fetchAll(); 
 if(count($elections) > 0) {
-    echo "<h2>Lisatud kanditaadid:</h2>";
     echo "<table>";
-    echo "<tr><th>Election</th>";
-    echo "<th>Name</th>";
-    echo "<th>Info</th>";
-    echo "<th>Page</th>";
+    echo "<tr><th>Name</th>";
     echo "<th>Votes</th>";
-    echo "<th>Date</th></tr>";
     foreach($elections as $election) {
-        echo "<tr><td>".$election['election']."</td>";
         echo "<td>".$election['name']."</td>";
-        echo "<td>".$election['info']."</td>";
-        echo "<td>".$election['page']."</td>";
-        echo "<td>".$election['votes']."</td>";
-        echo "<td>".$election['date']."</td></tr>";
+        echo "<td>".$election['votes']."</td>""</tr>";
     }
     echo "</table>";
 	mysql_close();
