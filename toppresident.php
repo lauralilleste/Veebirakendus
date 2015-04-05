@@ -13,7 +13,7 @@ catch(Exception $e){
     die(var_dump($e));
 }
 
-$sql_select = "SELECT TOP 10 * FROM elections_tbl where election='president' Order by votes DESC";
+$sql_select = "SELECT Name, Votes FROM elections_tbl where election='president' Order by votes DESC LIMIT 10";
 $stmt = $conn->query($sql_select);
 $elections = $stmt->fetchAll(); 
 if(count($elections) > 0) {
