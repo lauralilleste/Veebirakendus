@@ -20,7 +20,6 @@ include "header.php";
 				<?php
 				include "topkohalik.php";
 				?>
-				<?php include 'topkohalik.php';?>
 			</div>
 			<div class="top">
 				<p>Top 10 presidendi kanditaati.</p>
