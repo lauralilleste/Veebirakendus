@@ -1,4 +1,3 @@
-<HTML> 
 	<HEAD> 
 		<TITLE>
 			Soovitus
@@ -8,13 +7,11 @@
 		<script src="fb.js"></script>
 	</HEAD>
 	<body>
-
 		<header>
-			<h1>Soovita kandidaate</h1>
+			<h1>Poliitiline soovitusleht</h1>
 		</header>
 		<div id="style2"></div>
-		<nav>
-			
+		<nav>			
 			<a href="index.html">Avalehele</a>
 			<a href="soovitajad.html">Soovitajad</a>
 			<a id="soovitama"></a>
@@ -23,7 +20,6 @@
 			<div id="nimi"></div>
 			<div class="fb-login-button" data-max-rows="1" data-size="large"
 			 data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></div>
-			
 		</nav>
 		<div class="sidebar">
 			<ul>
@@ -35,21 +31,3 @@
 				<p>Reklaam paremal servas</p>
 			</ul>
 		</div>
-		<div class="screen">
-		<p>tekst</p>
-			<?php
-			include "soovitama.php";
-			?>
-			<br/>
-			<br/>
-			<h3>Anna hääl kandidaadile:</h3>
-			<form method="post" action="vote.php" enctype="multipart/form-data" >
-				Name <input type="text" name="vote_name" id="vote_name"/></br>
-				<input type="submit" name="submit" value="Anna hääl!" />
-			</form>
-			<br><br>
-
-		</div>
-	</body> 
- 
-</HTML>
