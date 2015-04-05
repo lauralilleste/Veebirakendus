@@ -1,5 +1,5 @@
 <?php
-echo "tekst"
+echo "tekst";
 session_start();
 /* INCLUSION OF LIBRARY FILEs*/
   require_once( 'lib/Facebook/FacebookSession.php');
@@ -54,14 +54,8 @@ if(isset($sess)){
 
 else if ($_SESSION['username']){
 		echo "Tere $name1";
-		echo "<p>";
 
 }
 else {
 	echo "Selle lehe vaatamiseks pead olema sisse logitud! Logi sisse kasutades Facebooki.";
-	echo '<a href='.$helper->getLoginUrl().'><img src="Facebooklogo.jpeg"></a>';
-	$name = $_POST['name'];                     
-			$password = $_POST['password'];
-	
-
 ?>
