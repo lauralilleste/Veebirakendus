@@ -1,7 +1,7 @@
-
 <?php
 ini_set('display_errors',1);
 error_reporting(E_ALL);
+
 echo "tekst";
 session_start();
 /* INCLUSION OF LIBRARY FILEs*/
@@ -61,4 +61,5 @@ else if ($_SESSION['username']){
 }
 else {
 	echo "Selle lehe vaatamiseks pead olema sisse logitud! Logi sisse kasutades Facebooki.";
+}
 ?>
