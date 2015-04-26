@@ -20,7 +20,7 @@
 			<a id="kutsu"></a>
 			<div id="nimi"></div>
 			<div class="fb-login-button" data-max-rows="1" data-size="large"
-			 data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></div>
+			 data-show-faces="false" data-auto-logout-link="true"></div>
 		</nav>
 		<div class="sidebar">
 			<ul>
