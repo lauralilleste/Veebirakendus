@@ -60,7 +60,7 @@
 
 		<div class="screen">
 			<p>Täida ankeet ja kliki <strong>salvesta</strong> .</p>
-			<form method="post" action="lisakandidaat.php" enctype="multipart/form-data" >
+			<form method="post" action="lihtneKandidaadiLisamine.php" enctype="multipart/form-data" >
 				Valimised: 
 					<input type="radio" name="election" value="riigikogu" checked>
 					<label for="e1">Riigikogu valimised</label><br />
@@ -72,16 +72,16 @@
 				Info <input type="text" name="info" id="info"/></br>
 				Page <input type="text" name="page" id="page"/></br>
 				<div id="haaleta" class="klass">
-				Anna ka hääl?:
+					Anna ka hääl?:
 					<input type="radio" name="votes" value="0" checked>
 					<label for="e1">Ei</label><br />
 					<input type="radio" name="votes" value="1">
 					<label for="e2">Jah</label><br />
-					</div>
+				</div>
 				<input type="submit" name="submit" value="Salvesta" />
 			</form>
 			<div id="kandidaatideTabel">
-				<h2>peaks siia midagi tooma</h2>
+				
 			</div>
 				
 				<button type="button" onclick="loadXMLDoc()">
