@@ -35,7 +35,10 @@ try {
 catch(Exception $e) {
     die(var_dump($e));
 }
-
+echo "<script>
+             alert('message sent succesfully'); 
+             window.history.go(-1);
+     </script>";
 }
 
 ?>
