@@ -20,7 +20,7 @@
 			<a href="soovitajad.php">Soovitajad</a>
 			<a href="soovitama.php">Soovitama</a>
 			<a href="kandidaadid.php">Kandidaadid</a>
-			<a href="kutsu.html">Kutsu</a>
+			<a href="kutsu.php">Kutsu</a>
 			<div id="nimi"></div>
 			<div class="fb-login-button" data-max-rows="1" data-size="large"
 			 data-show-faces="false" data-auto-logout-link="true"></div>
