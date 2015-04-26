@@ -14,11 +14,11 @@ catch(Exception $e){
 }
 if(!empty($_POST)) {
 try {
-	$election = $_POST['election'];
-    $name = $_POST['name'];
-    $info = $_POST['info'];
-	$page = $_POST['page'];
-	$votes = $_POST['votes'];
+	$election = $_GET['election'];
+    $name = $_GET['name'];
+    $info = $_GET['info'];
+	$page = $_GET['page'];
+	$votes = $_GET['votes'];
     $date = date("Y-m-d");
     // Insert data
     $sql_insert = "INSERT INTO elections_tbl (election, name, info, page, votes, date) 
@@ -36,5 +36,30 @@ catch(Exception $e) {
     die(var_dump($e));
 }
 echo "<h3>Kanditaat lisatud!</h3>";
+}
+$sql_select = "SELECT * FROM elections_tbl";
+$stmt = $conn->query($sql_select);
+$elections = $stmt->fetchAll(); 
+if(count($elections) > 0) {
+    echo "<h2>Lisatud kanditaadid:</h2>";
+    echo "<table>";
+    echo "<tr><th>Election</th>";
+    echo "<th>Name</th>";
+    echo "<th>Info</th>";
+    echo "<th>Page</th>";
+    echo "<th>Votes</th>";
+    echo "<th>Date</th></tr>";
+    foreach($elections as $election) {
+        echo "<tr><td>".$election['election']."</td>";
+        echo "<td>".$election['name']."</td>";
+        echo "<td>".$election['info']."</td>";
+        echo "<td>".$election['page']."</td>";
+        echo "<td>".$election['votes']."</td>";
+        echo "<td>".$election['date']."</td></tr>";
+    }
+    echo "</table>";
+	mysql_close();
+} else {
+    echo "<h3>No one is currently registered.</h3>";
 }
 ?>
