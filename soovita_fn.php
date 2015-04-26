@@ -46,6 +46,24 @@ session_start();
 				<input type="submit" name="submit" value="Anna hääl!" />
 			</form>
 			<br>
+			<div id="andmed">
+				<p>Riigikogu kandidaadid:</p>
+				<?php
+				include "dataRiigikogu.php";
+				?>
+			
+			
+				<p>Omavalitsuste kandidaadid:.</p>
+				<?php
+				include "dataKohalik.php";
+				?>
+			
+			
+				<p>Presidendi kandidaadid.</p>
+				<?php
+				include "dataPresident.php";
+				?>
+			</div>
 	<?php
 		//create request object,execute and capture response
 		$request = new FacebookRequest($sess, 'GET', '/me');
