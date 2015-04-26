@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html manifest="manifest.appcache">	
 	<HEAD> 
 		<TITLE>
@@ -25,11 +24,11 @@
 		</nav>
 		<div class="sidebar">
 			<ul>
-				<p>Reklaam vasakul servas</p>
+				Reklaam vasakul servas
 			</ul>
 		</div>
 		<div class="sidebar2">
 			<ul>
-				<p>Reklaam paremal servas</p>
+				Reklaam paremal servas
 			</ul>
 		</div>
