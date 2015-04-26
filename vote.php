@@ -18,9 +18,15 @@ if(!empty($_POST)) {
 		// Insert data
 		$sql = "UPDATE elections_tbl SET votes=votes+1 WHERE name='$vote_name'";
 		if ($conn->query($sql) === TRUE) {
-			echo "Hääl antud!";
+			echo "<script>
+             alert('Hääl antud!'); 
+             window.history.go(-1);
+			</script>";
 		} else {
-			echo "Antud kanditaati pole lisatud ";
+			echo "<script>
+             alert('Antud kandidaati pole lisatud!'); 
+             window.history.go(-1);
+			</script>";
 		}
 	}
 	catch(Exception $e) {

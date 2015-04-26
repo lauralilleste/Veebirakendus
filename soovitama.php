@@ -52,18 +52,9 @@ include "header.php";
 					</form>
 					<br>
 					<div id="kandidaatideTabel">
-						<p>Riigikogu kandidaadid:</p>
-						<?php
-						include "dataRiigikogu.php";
-						?>
-						<p>Omavalitsuste kandidaadid:.</p>
-						<?php
-						include "dataKohalik.php";
-						?>
-						<p>Presidendi kandidaadid.</p>
-						<?php
-						include "dataPresident.php";
-						?>
+						Kandidaatide tabeli nägemiseks uuendage andmeid
+						loadXMLDoc()
+						
 					</div>
 					<button type="button" onclick="loadXMLDoc()">
 					Uuenda andmeid
