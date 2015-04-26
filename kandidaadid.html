@@ -7,6 +7,29 @@
 		<meta charset="utf-8"> 
 		<link href="style.css" rel="stylesheet" type="text/css" >
 		<script src="fb.js"></script>
+		<script>
+			function loadXMLDoc()
+				{
+				var xmlhttp;
+				if (window.XMLHttpRequest)
+					{// code for IE7+, Firefox, Chrome, Opera, Safari
+					xmlhttp=new XMLHttpRequest();
+				}
+				else
+					{// code for IE6, IE5
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.onreadystatechange=function()
+					{
+					if (xmlhttp.readyState==4 && xmlhttp.status==200)
+						{
+						document.getElementById("kandidaatideTabel").innerHTML=xmlhttp.responseText;
+					}
+				}
+				xmlhttp.open("GET","vaataKandidaate.php",true);
+				xmlhttp.send();
+			}
+		</script>
 	</HEAD>
 	<body>
 		<header>
@@ -57,19 +80,13 @@
 					</div>
 				<input type="submit" name="submit" value="Salvesta" />
 			</form>
-			<?php include 'lisakandidaat.php';?>
+			<div id="kandidaatideTabel">
+				<h2>peaks siia midagi tooma</h2>
+				<button type="button" onclick="loadXMLDoc()">
+					Change Content
+				</button>
+			</div>
 		</div>
 
  </body>
 </html>
-
-
-<script scr="bower_components/jquery/jquery.js"></script>
-<script>
-	$(function(){
-		
-		$("#haaleta").hide();
-	
-	});
-	
-</script>
