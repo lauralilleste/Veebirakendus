@@ -51,9 +51,9 @@ include "header.php";
 						<input type="submit" name="submit" value="Anna hääl!" />
 					</form>
 					<br>
-					<div id="kandidaatideTabel">
+					<div id="kandidaatideTabel" onunload="loadXMLDoc()">
 						Kandidaatide tabeli nägemiseks uuendage andmeid
-						loadXMLDoc()
+						
 						
 					</div>
 					<button type="button" onclick="loadXMLDoc()">
