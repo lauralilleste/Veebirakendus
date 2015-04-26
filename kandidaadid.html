@@ -30,34 +30,6 @@
 				xmlhttp.open("GET","vaataKandidaate.php",true);
 				xmlhttp.send();
 			}
-			function loadXMLDoc3()
-				{
-				var xmlhttp;
-				if (window.XMLHttpRequest)
-					{// code for IE7+, Firefox, Chrome, Opera, Safari
-					xmlhttp=new XMLHttpRequest();
-				}
-				else
-					{// code for IE6, IE5
-					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-				}
-				xmlhttp.onreadystatechange=function()
-					{
-					if (xmlhttp.readyState==4 && xmlhttp.status==200)
-						{
-						document.getElementById("lisamineDiv").innerHTML=xmlhttp.responseText;
-					}
-				}
-				var name = document.getElementById('name').value;
-				var info = document.getElementById('info').value;
-				var page = document.getElementById('page').value;
-				var election = document.getElementById('election').value;
-				var votes = document.getElementById('votes').value;
-				var queryString = "&name"+name+"&info"+info+"&page"+page+"&election"+election+"&votes"+votes;
-   
-				xmlhttp.open("GET","vaataKandidaate.php"+ queryString,true);
-				xmlhttp.send();
-			}
 					
 		</script>
 	</HEAD>
