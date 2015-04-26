@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">	
+	<HEAD> 
+		<TITLE>
+			Soovitus
+		</TITLE>
+		<meta charset="utf-8"> 
+		<link href="style.css" rel="stylesheet" type="text/css" >
+		<script src="fb.js"></script>
+	</HEAD>
+	<body>
+		<header>
+			<h1>Poliitiline soovitusleht</h1>
+		</header>
+		<div id="style2"></div>
+		<nav>			
+			<a href="index.php">Avalehele</a>
+			<a href="soovitajad.php">Soovitajad</a>
+			<a href="soovitama.php">Soovitama</a>
+			<a href="kandidaadid.php">Kandidaadid</a>
+			<a id="kutsu"></a>
+			<div id="nimi"></div>
+			<div class="fb-login-button" data-max-rows="1" data-size="large"
+			 data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></div>
+		</nav>
+		<div class="sidebar">
+			<ul>
+				<p>Reklaam vasakul servas</p>
+			</ul>
+		</div>
+		<div class="sidebar2">
+			<ul>
+				<p>Reklaam paremal servas</p>
+			</ul>
+		</div>
+
+
+		<div class="screen">
+			<p>Täida ankeet ja kliki <strong>salvesta</strong> .</p>
+			<form method="post" action="lisakandidaat.php" enctype="multipart/form-data" >
+				Valimised: 
+					<input type="radio" name="election" value="riigikogu" checked>
+					<label for="e1">Riigikogu valimised</label><br />
+					<input type="radio" name="election" value="kohalik">
+					<label for="e2">Kohaliku volikogu valimised</label><br />
+					<input type="radio" name="election" value="president">
+					<label for="e3">Presidendi valimised</label><br />
+				Name <input type="text" name="name" id="name"/></br>
+				Info <input type="text" name="info" id="info"/></br>
+				Page <input type="text" name="page" id="page"/></br>
+				<div id="haaleta" class="klass">
+				Anna ka hääl?:
+					<input type="radio" name="votes" value="0" checked>
+					<label for="e1">Ei</label><br />
+					<input type="radio" name="votes" value="1">
+					<label for="e2">Jah</label><br />
+					</div>
+				<input type="submit" name="submit" value="Salvesta" />
+			</form>
+			<?php include 'lisakandidaat.php';?>
+		</div>
+
+ </body>
+</html>
+
+
+<script scr="bower_components/jquery/jquery.js"></script>
+<script>
+	$(function(){
+		
+		$("#haaleta").hide();
+	
+	});
+	
+</script>
