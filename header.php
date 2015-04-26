@@ -24,11 +24,11 @@
 		</nav>
 		<div class="sidebar">
 			<ul>
-				Reklaam vasakul servas
+				<li><p>Reklaam vasakul servas</p></li>
 			</ul>
 		</div>
 		<div class="sidebar2">
 			<ul>
-				Reklaam paremal servas
+				<li><p>Reklaam paremal servas</p></li>
 			</ul>
 		</div>
