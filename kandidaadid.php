@@ -6,12 +6,13 @@ include "header.php";
 		<div class="screen">
 			<p>Täida ankeet ja kliki salvesta.</p>
 			<form action="lihtneKandidaadiLisamine.php" method="post" >
-				Valimised: 
-				<select id="election">
-					<option value="riigikogu" selected >Riigikogu valimised</option>
-					<option value="kohalik">Kohaliku omavalitsuse valmised</option>
-					<option value="president">Presidendi valimised</option>
-				</select>
+				Valimised:  
+					<input type="radio" id="election" value="riigikogu" checked>
+					<label for="e1">Riigikogu valimised</label><br />
+					<input type="radio" id="election" value="kohalik">
+					<label for="e2">Kohaliku volikogu valimised</label><br />
+					<input type="radio" id="election" value="president">
+					<label for="e3">Presidendi valimised</label><br />
 				Name <input type="text" name="name" id="name"/></br>
 				Info <input type="text" name="info" id="info"/></br>
 				Page <input type="text" name="page" id="page"/></br>
