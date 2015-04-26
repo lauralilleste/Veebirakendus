@@ -19,13 +19,13 @@ if(!empty($_POST)) {
 		$sql = "UPDATE elections_tbl SET votes=votes+1 WHERE name='$vote_name'";
 		if ($conn->query($sql) === TRUE) {
 			echo "<script>
-             alert('Hääl antud!'); 
-             window.history.go(-1);
+             alert('Hääl edukalt antud!'); 
+             window.history.go(-2);
 			</script>";
 		} else {
 			echo "<script>
-             alert('Antud kandidaati pole lisatud!'); 
-             window.history.go(-1);
+             alert('Hääl antud!'); 
+             window.history.go(-2);
 			</script>";
 		}
 	}
