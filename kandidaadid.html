@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html manifest="manifest.appcache">	
 	<HEAD> 
@@ -89,7 +90,7 @@
 
 		<div class="screen">
 			<p>Täida ankeet ja kliki salvesta> .</p>
-			<form name="myForm" >
+			<form action="lihtneKandidaadiLisamine.php" method="post" >
 				Valimised: 
 					<input type="radio" id="election" value="riigikogu" checked>
 					<label for="e1">Riigikogu valimised</label><br />
@@ -108,11 +109,9 @@
 					<label for="e2">Jah</label><br />
 				
 				
-				<input type="button" onclick="loadXMLDoc3()" value="Salvesta" />
+				<input type="submit"  value="Salvesta" />
 			</form>
-			<div id="lisamineDiv">
-				
-			</div>
+			
 			<div id="kandidaatideTabel">
 				
 			</div>
