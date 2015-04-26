@@ -6,6 +6,9 @@
 		<meta charset="utf-8"> 
 		<link href="style.css" rel="stylesheet" type="text/css" >
 		<script src="fb.js"></script>
+		<?php
+		include "kandidaatideUuendamine.php";
+		?>
 	</HEAD>
 	<body>
 		<header>
