@@ -78,7 +78,9 @@ include "header.php";
 			<br>
 			<div id="kandidaatideTabel" onbeforeunload="loadXMLDoc()">
 						Kandidaatide tabeli nägemiseks uuendage andmeid
-						
+						<?php
+							include "koguAndmed.php";
+						?>
 						
 			</div>
 			<button type="button" onclick="loadXMLDoc()">
