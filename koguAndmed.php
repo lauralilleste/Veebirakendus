@@ -13,7 +13,7 @@ catch(Exception $e){
     die(var_dump($e));
 }
 
-$sql_select = "SELECT * FROM elections_tbl Order by votes";
+$sql_select = "SELECT * FROM elections_tbl Order by votes DESC, date";
 $stmt = $conn->query($sql_select);
 $elections = $stmt->fetchAll(); 
 if(count($elections) > 0) {
