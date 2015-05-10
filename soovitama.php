@@ -53,7 +53,9 @@ include "header.php";
 					<br>
 					<div id="kandidaatideTabel" onunload="loadXMLDoc()">
 						Kandidaatide tabeli nägemiseks uuendage andmeid
-						
+						<?php
+							include "koguAndmed.php";
+						?>
 						
 					</div>
 					<button type="button" onclick="loadXMLDoc()">
