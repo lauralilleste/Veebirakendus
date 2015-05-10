@@ -52,7 +52,7 @@ include "header.php";
 					</form>
 					<br>
 					<div id="kandidaatideTabel" onunload="loadXMLDoc()">
-						Kandidaatide tabeli nägemiseks uuendage andmeid
+						
 						<?php
 							include "koguAndmed.php";
 						?>
@@ -79,7 +79,7 @@ include "header.php";
 			</form>
 			<br>
 			<div id="kandidaatideTabel" onbeforeunload="loadXMLDoc()">
-						Kandidaatide tabeli nägemiseks uuendage andmeid
+						
 						<?php
 							include "koguAndmed.php";
 						?>
